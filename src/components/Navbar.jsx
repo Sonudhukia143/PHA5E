@@ -38,7 +38,7 @@ export default function Navbar() {
                                     `rounded-md px-3 py-2 text-sm font-medium ${isActive ? "bg-black text-white" : "text-gray-300 hover:text-white"}`
                                 }
                             >
-                                <img src="src/assets/learn.svg"></img>
+                                <img src="/learn.svg"></img>
                             </NavLink>
                         </div>
                         <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end">

@@ -66,8 +66,7 @@ export default function Homepage() {
           transition: "2s ease"
         }}>
           {
-            position[index]?.x != 0
-            ?        
+            position[index]?.x != 0 && position[index]?.x != undefined?        
             <span className="textps1">
             <h1>{imgData[index]?.h1}</h1>
             <h1>{imgData[index]?.h2}</h1>
