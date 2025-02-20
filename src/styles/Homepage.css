@@ -1,0 +1,86 @@
+.homepage{
+    margin-top: 0.5em;
+    z-index: -9999;
+}
+.homepageText{
+    color: aliceblue;
+    z-index: 9998;
+    pointer-events:none;
+}
+.image{
+    width: 50vh;
+    height: 30vh;
+    position: absolute;
+}
+.image:hover{
+    z-index: 9999;
+    cursor: pointer;
+    transition: 3s ease;
+}
+.ps1{
+    top: 30%;
+    left: 15%;
+    background-image: url("/images/image1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.ps2{
+    top: 20%;
+    left: 60%;
+    background-image: url("/images/image2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.ps3{
+    top: 70%;
+    left: 60%;
+    background-image: url("/images/image3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.ps4{
+    top: 90%;
+    right: 60%;
+    background-image: url("/images/image4.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.imageHover{
+    color: transparent;
+    -webkit-text-stroke: 1px white; /* Creates a white-bordered effect */
+    transition: 0.3s ease;
+}
+.textps1{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 70%;
+    right: -20%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.textps1 h1{
+    font-size: 50px;
+    display: block;
+}
+.textps1 p{
+    display: flex;
+    font-size: 10px;
+    display: block;
+}
+
+  

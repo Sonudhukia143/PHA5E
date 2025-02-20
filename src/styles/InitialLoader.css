@@ -1,0 +1,38 @@
+.intialloader{
+    color: aliceblue;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10em;
+    font-weight: 800;
+    background-color: black;
+    z-index: 999999;
+    position: absolute;
+}
+
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animated-text {
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    animation: fillText 4s ease 1;
+}
+
+ @keyframes fillText {
+    0% { color: transparent; -webkit-text-stroke: 2px white; }
+    50% { color: rgba(255, 255, 255, 0.5); -webkit-text-stroke: 1px white; }
+    75% { color: white; -webkit-text-stroke: 0px; }
+    100% { color: transparent; -webkit-text-stroke: 1px transparent; }
+} 
+
