@@ -4,17 +4,19 @@ import { useRef } from "react";
 
 export default function Homepage() {
   const imgRef = useRef([]);
-
   const [color, setColor] = useState(true);
   const [position, setPosition] = useState({});
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
-  const mouseEnteredImage = () => {
+  const mouseEnteredImage = (index) => {
     setColor(false);
+    setHoveredIndex(index);
   }
 
   const mouseLeavedImage = (index) => {
     setColor(true);
     setPosition((prev) => ({ ...prev , [index]:{x:0,y:0}}));
+    setHoveredIndex(null);
   }
 
   const handleMouseMove = (e, index) => {
@@ -57,13 +59,13 @@ export default function Homepage() {
           <span
             key={index}
             ref={(el) => (imgRef.current[index] = el)}
-            className={`image ${className}`}
-            onMouseEnter={mouseEnteredImage}
+            className={`image ${className} ${hoveredIndex !== null && hoveredIndex !== index ? "black-vector" : ""}`}
+            onMouseEnter={() => mouseEnteredImage(index)}
             onMouseLeave={() => mouseLeavedImage(index)}
             onMouseMove={(e) => handleMouseMove(e,index)}
         style={{
           transform: `translate(${position[index]?.x || 0}px, ${position[index]?.y || 0}px)`,
-          transition: "2s ease"
+          transition: position[index]?.x?`2s ease`:"2s ease",
         }}>
           {
             position[index]?.x != 0 && position[index]?.x != undefined?        
@@ -88,37 +90,13 @@ export default function Homepage() {
         <h1 className="homepageText">DIGITAL</h1>
         <h1 className="homepageText">EXPER--</h1>
         <h1 className="homepageText">IENCES</h1>
-        <span className="image ps1">
-          <img src="src/public/images/image1.png"></img>
-          <span className="textps1">
-            <h1>BIGGER</h1>
-            <h1>SCIENCE</h1>
-            <p>Imersive Experience/Web GL/Gaming</p>
-          </span>
+        <span className="imagemb mb1">
         </span>
-        <span className="image ps2">
-          <img src="src/public/images/image2.png"></img>
-          <span className="textps1">
-            <h1>BIGGER</h1>
-            <h1>SCIENCE</h1>
-            <p>Imersive Experience/Web GL/Gaming</p>
-          </span>
+        <span className="imagemb mb2">
         </span>
-        <span className="image ps3">
-          <img src="src/public/images/image3.png"></img>
-          <span className="textps1">
-            <h1>BIGGER</h1>
-            <h1>SCIENCE</h1>
-            <p>Imersive Experience/Web GL/Gaming</p>
-          </span>
+        <span className="imagemb mb3">
         </span>
-        <span className="image ps4">
-          <img src="src/public/images/image4.jpg"></img>
-          <span className="textps1">
-            <h1>BIGGER</h1>
-            <h1>SCIENCE</h1>
-            <p>Imersive Experience/Web GL/Gaming</p>
-          </span>
+        <span className="imagemb mb4">
         </span>
       </div >
     </>

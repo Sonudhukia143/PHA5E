@@ -32,7 +32,7 @@
     top: 30%;
     left: 15%;
     background-image: url("https://res.cloudinary.com/dmaacvm3f/image/upload/f_auto,q_auto/v1740067437/PHA5E/image1_nbxt5r.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
@@ -42,7 +42,7 @@
     top: 20%;
     left: 60%;
     background-image: url("https://res.cloudinary.com/dmaacvm3f/image/upload/f_auto,q_auto/v1740067436/PHA5E/image2_hainvh.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
@@ -52,7 +52,7 @@
     top: 70%;
     left: 60%;
     background-image: url("https://res.cloudinary.com/dmaacvm3f/image/upload/f_auto,q_auto/v1740067473/PHA5E/image3_f4rkdn.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
@@ -62,7 +62,7 @@
     top: 90%;
     right: 60%;
     background-image: url("https://res.cloudinary.com/dmaacvm3f/image/upload/f_auto,q_auto/v1740067440/PHA5E/image4_twzou5.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
@@ -93,5 +93,60 @@
     font-size: 10px;
     display: block;
 }
+
+/* Black background with diagonal white lines */
+.black-vector {
+    background: black; /* Solid black background */
+    display: block;
+    border: 0.5px solid white;
+    background-image: 
+    linear-gradient(30.99deg, transparent 49.6%, white 2px, white 2px, transparent 50%),
+    linear-gradient(-30.9deg, transparent 49.6%, white 2px, white 2px, transparent 50%);
+}
+
+/* Mobile view */
+@media screen and (max-width: 1000px) {
+    .homepage{
+        margin-top: -20%;
+    }
+}
+.imagemb{
+    width: 20vh;
+    height: 15vh;
+    background-color: aliceblue;
+    position: absolute;
+    animation: grow 2s ease 1;
+    border: 0px;
+}
+.mb1{
+    background-image: url("https://res.cloudinary.com/dmaacvm3f/image/upload/f_auto,q_auto/v1740067440/PHA5E/image4_twzou5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    left:10%;
+    top: 35%;
+}
+.mb2{
+    background-image: url("https://res.cloudinary.com/dmaacvm3f/image/upload/f_auto,q_auto/v1740067473/PHA5E/image3_f4rkdn.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    right: 10%;
+    top: 15%;
+}
+.mb3{
+    background-image: url("https://res.cloudinary.com/dmaacvm3f/image/upload/f_auto,q_auto/v1740067436/PHA5E/image2_hainvh.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 15%;
+    top: 60%;
+}
+.mb4{
+    background-image: url("https://res.cloudinary.com/dmaacvm3f/image/upload/f_auto,q_auto/v1740067437/PHA5E/image1_nbxt5r.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 10%;
+    top: 80%;
+}
+
+
 
   
