@@ -11,6 +11,17 @@
     width: 50vh;
     height: 30vh;
     position: absolute;
+    animation: grow 2s ease 1;
+    transform-origin: center;
+}
+@keyframes grow {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 .image:hover{
     z-index: 9999;
