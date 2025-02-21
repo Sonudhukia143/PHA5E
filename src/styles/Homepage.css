@@ -20,7 +20,7 @@
 .ps1{
     top: 30%;
     left: 15%;
-    background-image: url("/images/image1.png");
+    background-image: url("https://res.cloudinary.com/dmaacvm3f/image/upload/f_auto,q_auto/v1740067437/PHA5E/image1_nbxt5r.png");
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
@@ -30,7 +30,7 @@
 .ps2{
     top: 20%;
     left: 60%;
-    background-image: url("/images/image2.png");
+    background-image: url("https://res.cloudinary.com/dmaacvm3f/image/upload/f_auto,q_auto/v1740067436/PHA5E/image2_hainvh.png");
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
@@ -40,7 +40,7 @@
 .ps3{
     top: 70%;
     left: 60%;
-    background-image: url("/images/image3.png");
+    background-image: url("https://res.cloudinary.com/dmaacvm3f/image/upload/f_auto,q_auto/v1740067473/PHA5E/image3_f4rkdn.png");
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
@@ -50,7 +50,7 @@
 .ps4{
     top: 90%;
     right: 60%;
-    background-image: url("/images/image4.jpg");
+    background-image: url("https://res.cloudinary.com/dmaacvm3f/image/upload/f_auto,q_auto/v1740067440/PHA5E/image4_twzou5.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
